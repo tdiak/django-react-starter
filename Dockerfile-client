@@ -1,0 +1,9 @@
+FROM node:carbon
+
+RUN mkdir -p /usr/src/app
+
+WORKDIR /usr/src/app
+
+ADD ./html/package.json .
+
+RUN npm install
